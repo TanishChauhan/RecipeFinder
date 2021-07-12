@@ -48,6 +48,7 @@ function App() {
       <form onSubmit={onSubmit}>
         <div className="Header">
           <h1 >Recipe Finder</h1> <br /></div>
+          {/* making the search engine ->> */}
         <input type="text" placeholder="Enter the name of Dish " autoComplete="off" onChange={onChange} value={query} />
 
         <input type="submit" value="Get Recipe" />

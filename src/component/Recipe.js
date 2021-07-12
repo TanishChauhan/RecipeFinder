@@ -46,7 +46,7 @@ const Recipe = (recipe) => {
 				<h3><br /><em> &nbsp;&nbsp;&nbsp; Category of meal:</em> {strCategory}
 					<br /> <em>Area of the meal:</em> {strArea}</h3>
 			</div>
-
+				{/* ingredients portion ->>  */}
 			<h3 className="Ingredients-head">Ingredients</h3>
 			<div className="Ingredients-content">
 				<Ingredient
