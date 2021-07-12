@@ -13,10 +13,10 @@ const Ingredient = ({ recipe, ingredientsKeyNames, quantityKeyNames }) => {
 			const measure = JSON.stringify(
 				recipe.recipe[`${quantityKeyNames[a - 1]}`]
 			);
-			// console.log(typeof sliceString, sliceString);
+			console.log(typeof sliceString, sliceString);
 			{
 				sliceString.length !== 0 &&
-				sliceString !== "ul" &&
+					sliceString !== "ul" &&
 					firstItems.push(
 						<li>
 							{sliceString} --- {measure}
@@ -31,3 +31,31 @@ const Ingredient = ({ recipe, ingredientsKeyNames, quantityKeyNames }) => {
 };
 
 export default Ingredient;
+
+
+
+
+
+
+
+
+
+// class dish extends React.Component {
+// 	render() {
+// 	  return <h2>I am a {this.props.brand}!</h2>;
+// 	}
+//   }
+
+//   class dishs extends React.Component {
+// 	render() {
+// 	  const carname = "Ford";
+// 	  return (
+// 		<div>
+// 		<h1>Who lives in my garage?</h1>
+// 		<dish  brand={carname} />
+// 		</div>
+// 	  );
+// 	}
+//   }
+
+//   ReactDOM.render(<dishs />, document.getElementById('root'));
